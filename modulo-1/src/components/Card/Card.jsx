@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Title from "../Title/Title";
 import defaultImage from "../../images/defaultImage.png";
-import './card.css'
+import "./card.css";
 
 export default class Card extends Component {
   constructor(props) {
@@ -13,7 +13,9 @@ export default class Card extends Component {
 
   static defaultProps = {
     card: {
-      image: defaultImage
+      image: defaultImage,
+      dataNascimento: "01/01/2001",
+      pais: 'Brasil'
     }
   };
 
@@ -21,7 +23,12 @@ export default class Card extends Component {
     return (
       <div className="card-container">
         <img className="imagem-perfil" src={this.state.card.image} />
-        <Title name={this.state.card.name} lastName={this.state.card.lastName}/>
+        <div className="info">
+          <Title
+            name={this.state.card.name}
+            lastName={this.state.card.lastName}
+          />
+        </div>
       </div>
     );
   }
