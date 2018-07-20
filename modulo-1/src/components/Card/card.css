@@ -1,0 +1,13 @@
+.imagem-perfil {
+    border: none;
+    border-radius: 500px;
+    width: 300px;
+    height: 300px;
+}
+
+.card-container {
+    border: 1px solid black;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
