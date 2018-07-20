@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Card from "./components/Card/Card";
+import Card from "./components/Card/card";
 import imageDp from "./images/deadPool.jpg";
 import imageWolverine from "./images/wolverine.jpg";
 import imageProfessor from "./images/professor.jpg";

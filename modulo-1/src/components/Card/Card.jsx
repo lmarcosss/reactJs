@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Title from "../Title/Title";
+import Title from "../Title/title";
+import Button from "../Button/button";
 import defaultImage from "../../images/defaultImage.png";
 import "./card.css";
 
@@ -21,7 +22,7 @@ export default class Card extends Component {
 
   renderImagem() {
     if (this.state.card.image === undefined) {
-      return (<img className="imagem-perfil offline" src={defaultImage} />)
+      return <img className="imagem-perfil offline" src={defaultImage} />;
     } else {
       return (
         <img
@@ -35,7 +36,7 @@ export default class Card extends Component {
   render() {
     console.log(this.state.card);
     return (
-      <div className="card-container" onClick={this.props.onClick}>
+      <div className="card-container">
         {this.renderImagem()}
         <div className="info">
           <Title
@@ -43,6 +44,7 @@ export default class Card extends Component {
             lastName={this.state.card.lastName}
           />
         </div>
+        <Button onClick={this.props.onClick} text="Adicionar" className="blue medium"/>
       </div>
     );
   }

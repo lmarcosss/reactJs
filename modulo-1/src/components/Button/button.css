@@ -1,0 +1,16 @@
+button {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.blue {
+    border: none;
+    background: #0F3A71;
+    color: aliceblue;
+}
+
+.medium {
+    width: 200px;
+    height: 50px;
+}
