@@ -14,16 +14,29 @@ export default class Card extends Component {
   static defaultProps = {
     card: {
       image: defaultImage,
-      dataNascimento: "01/01/2001",
       pais: "Brasil",
       status: "offline"
     }
   };
 
+  renderImagem() {
+    if (this.state.card.image === undefined) {
+      return (<img className="imagem-perfil offline" src={defaultImage} />)
+    } else {
+      return (
+        <img
+          className={"imagem-perfil " + this.state.card.status}
+          src={this.state.card.image}
+        />
+      );
+    }
+  }
+
   render() {
+    console.log(this.state.card);
     return (
-      <div className="card-container">
-        <img className={"imagem-perfil " + this.state.card.status} src={this.state.card.image} />
+      <div className="card-container" onClick={this.props.onClick}>
+        {this.renderImagem()}
         <div className="info">
           <Title
             name={this.state.card.name}

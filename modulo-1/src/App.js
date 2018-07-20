@@ -10,8 +10,8 @@ class App extends Component {
     super(props);
     this.state = {
       deadPool: {
-        name: "Slade",
-        lastName: "Wilson",
+        name: "Slade Wilson",
+        lastName: "DeadPool",
         dataNascimento: "01/03/1995",
         pais: "Brasil",
         status: "online",
@@ -27,20 +27,37 @@ class App extends Component {
       },
       wolverine: {
         name: "Logan",
-        lastName: "",
+        lastName: "Wolverine",
         dataNascimento: "01/03/1995",
         pais: "Brasil",
         status: "offline",
         image: imageWolverine
       },
-
+      leonardo: {
+        name: "Leonardo",
+        lastName: "Marcos",
+        dataNascimento: "01/03/1995"
+      }
     };
   }
+  
   render() {
     return (
       <div className="App">
-        {[this.state.deadPool, this.state.professor, this.state.wolverine].map((personagem, index) => (
-          <Card key={index} card={personagem} />
+        {[
+          this.state.deadPool,
+          this.state.professor,
+          this.state.wolverine,
+          this.state.leonardo,
+          new Object()
+        ].map((personagem, index) => (
+          <Card
+            key={index}
+            card={personagem}
+            onClick={function(e) {
+              alert(personagem.name +" clicou");  
+            }}
+          />
         ))}
       </div>
     );
