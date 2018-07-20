@@ -51,7 +51,7 @@
     background: url(../../images/like.svg) no-repeat;
 }
 
-.like:hover {
+.liked {
     cursor: pointer;
     width: 50px;
     height: 45px;

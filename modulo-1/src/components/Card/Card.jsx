@@ -8,8 +8,10 @@ export default class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      card: this.props.card
+      card: this.props.card,
+      like: "like"
     };
+    this.darLike = this.darLike.bind(this)
   }
 
   static defaultProps = {
@@ -33,6 +35,18 @@ export default class Card extends Component {
     }
   }
 
+  darLike(){
+    if(this.state.like === "like") {
+      this.setState({
+        like: "liked"
+      })
+    } else {
+      this.setState({
+        like: "like"
+      })
+    }
+  }
+
   render() {
     console.log(this.state.card);
     return (
@@ -45,7 +59,7 @@ export default class Card extends Component {
           />
         </div>
         <div className="opcoes">
-          <div className="like" />
+          <div className={this.state.like} onClick={this.darLike}/>
           <Button
             onClick={this.props.onClick}
             text="Adicionar"

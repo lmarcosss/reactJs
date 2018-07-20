@@ -6,8 +6,8 @@ import imageWolverine from "./images/wolverine.jpg";
 import imageProfessor from "./images/professor.jpg";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       deadPool: {
         name: "Slade Wilson",
