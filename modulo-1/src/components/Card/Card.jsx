@@ -15,14 +15,15 @@ export default class Card extends Component {
     card: {
       image: defaultImage,
       dataNascimento: "01/01/2001",
-      pais: 'Brasil'
+      pais: "Brasil",
+      status: "offline"
     }
   };
 
   render() {
     return (
       <div className="card-container">
-        <img className="imagem-perfil" src={this.state.card.image} />
+        <img className={"imagem-perfil " + this.state.card.status} src={this.state.card.image} />
         <div className="info">
           <Title
             name={this.state.card.name}

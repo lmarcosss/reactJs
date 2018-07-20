@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 export default class Title extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   static defaultProps = {
     name: "Desconhecido",
@@ -11,6 +8,10 @@ export default class Title extends Component {
   };
 
   render() {
-    return <h1>Olá, {this.props.name} {this.props.lastName}!</h1>;
+    return (
+      <h1>
+        Olá, {this.props.name} {this.props.lastName}!
+      </h1>
+    );
   }
 }
