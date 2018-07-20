@@ -48,8 +48,7 @@ class App extends Component {
           this.state.deadPool,
           this.state.professor,
           this.state.wolverine,
-          this.state.leonardo,
-          new Object()
+          this.state.leonardo
         ].map((personagem, index) => (
           <Card
             key={index}

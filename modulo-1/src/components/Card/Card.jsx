@@ -44,7 +44,14 @@ export default class Card extends Component {
             lastName={this.state.card.lastName}
           />
         </div>
-        <Button onClick={this.props.onClick} text="Adicionar" className="blue medium"/>
+        <div className="opcoes">
+          <div className="like" />
+          <Button
+            onClick={this.props.onClick}
+            text="Adicionar"
+            className="blue medium"
+          />
+        </div>
       </div>
     );
   }
