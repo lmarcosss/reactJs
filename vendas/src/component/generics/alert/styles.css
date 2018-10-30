@@ -1,0 +1,6 @@
+.errorLogin {
+  position: absolute;
+  bottom: 80px;
+  font-size: 15px;
+  color: red;
+}

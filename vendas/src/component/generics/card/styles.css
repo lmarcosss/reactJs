@@ -1,0 +1,15 @@
+.cardImage {
+  width: 100px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: 100%;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.card {
+  cursor: pointer;
+  width: 300px;
+  margin-right: 10px;
+  margin-top: 10px;
+}

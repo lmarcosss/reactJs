@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 export default class Title extends Component {
-
   static defaultProps = {
     name: "Desconhecido",
     lastName: "Sem sobrenome"

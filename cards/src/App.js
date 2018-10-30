@@ -40,7 +40,7 @@ class App extends Component {
       }
     };
   }
-  
+
   render() {
     return (
       <div className="App">
@@ -54,7 +54,7 @@ class App extends Component {
             key={index}
             card={personagem}
             onClick={function(e) {
-              alert(personagem.name +" clicou");  
+              alert(personagem.name + " clicou");
             }}
           />
         ))}
