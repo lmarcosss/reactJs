@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+//import { Redirect } from "react-router-dom";
 import "./styles.css";
 import FormLogin from "../../component/formLogin";
 export default class Login extends Component {
@@ -16,10 +16,6 @@ export default class Login extends Component {
   }
 
   render() {
-    if (this.state.home) {
-      return <Redirect push to="/home" />;
-    }
-
     return (
       <div className="login">
         <FormLogin

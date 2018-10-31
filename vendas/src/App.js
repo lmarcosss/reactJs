@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import Login from "./pages/login/index";
+//import Login from "./pages/login/index";
 import Home from "./pages/home/index";
+import Product from "./pages/product/index";
 import { Switch, Route } from "react-router-dom";
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
         <Switch>
           {/* <Route exact={true} path="/" component={Login} />
           <Route path="/login" component={Login} /> */}
-          <Route patch="/home" component={Home} />
+          <Route exact strict patch="/home" component={Home} />
         </Switch>
       </div>
     );

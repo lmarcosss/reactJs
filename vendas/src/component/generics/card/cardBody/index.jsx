@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { CardBody, CardText, CardTitle, CardSubtitle } from "reactstrap";
 class BodyCard extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <CardBody className="cardBody">
