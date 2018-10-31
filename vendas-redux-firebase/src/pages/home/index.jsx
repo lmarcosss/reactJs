@@ -5,12 +5,11 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import "./styles.css";
 import dados from "../../dados.js";
 import Product from "../product/index";
-import selectAllProducts from "../actions";
+import * as actions from "../../store/actions/";
 import { connect } from "react-redux";
 import _ from "lodash";
 
-const { data } = this.props;
-export default class Home extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,6 +20,7 @@ export default class Home extends Component {
   }
 
   componentWillMount() {
+    console.log(this.props);
     this.props.selectAllProducts();
   }
 
@@ -32,6 +32,7 @@ export default class Home extends Component {
   }
 
   renderProducts() {
+    const { data } = this.props;
     return _.map(data, (dado, i) => {
       return (
         <CardProduct
@@ -47,14 +48,14 @@ export default class Home extends Component {
   }
 
   render() {
-    if (this.state.product) {
-      return (
-        <Product
-          renderHome={() => this.setState({ product: false })}
-          product={this.state.productSelected}
-        />
-      );
-    }
+    // if (this.state.product) {
+    //   return (
+    //     <Product
+    //       renderHome={() => this.setState({ product: false })}
+    //       product={this.state.productSelected}
+    //     />
+    //   );
+    // }
     return (
       <div className="home">
         <NavBar />
@@ -72,5 +73,5 @@ const mapStateToProps = ({ data }) => {
 
 export default connect(
   mapStateToProps,
-  selectAllProducts
-)(ToDoList);
+  actions
+)(Home);
