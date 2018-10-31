@@ -1,4 +1,4 @@
-### Projeto Vendas
+### Projeto Vendas (Incluindo Firebase && Redux)
 
 > Esse projeto foi criado com react e reactstrap.
 
