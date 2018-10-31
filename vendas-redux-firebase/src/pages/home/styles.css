@@ -1,0 +1,21 @@
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardBody p {
+  text-align: left;
+}
