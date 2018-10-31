@@ -22,7 +22,7 @@ class Product extends Component {
         <NavBar />
         <div className="product-content">
           <div className="product-item">
-            <CardImg className="card-image" src={this.state.product.image} />
+            <CardImg id="card-image" src={this.state.product.image} />
             <div className="productBody">
               <CardBody className="card-body">
                 <CardTitle>{this.state.product.title}</CardTitle>

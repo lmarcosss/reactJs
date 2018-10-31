@@ -15,10 +15,6 @@ export default class Home extends Component {
     this.redirectProduct = this.redirectProduct.bind(this);
   }
 
-  // componentWillUpdate() {
-  //   this.setState({ product: false });
-  // }
-
   redirectProduct(dado) {
     this.setState({
       product: true,
