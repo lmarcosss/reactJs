@@ -20,7 +20,7 @@ class Home extends Component {
   }
 
   componentWillMount() {
-    console.log(this.props);
+    console.log(this.props.data);
     this.props.selectAllProducts();
   }
 

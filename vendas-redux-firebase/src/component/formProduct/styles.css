@@ -1,0 +1,19 @@
+.content-form-product {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-product {
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  width: 500px;
+  height: 450px;
+  padding: 50px;
+}
+
+.button-form-product {
+  width: 400px;
+}
