@@ -32,7 +32,7 @@ class FormProduct extends Component {
       image: this.state.image
     };
     event.preventDefault();
-    addProduct({ product: object });
+    addProduct(object);
     this.setState({
       title: "",
       price: "",

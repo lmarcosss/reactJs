@@ -2,8 +2,6 @@ import { productsRef } from "../../config/firebase";
 import { SELECT_PRODUCTS } from "./types";
 
 export const addProduct = newProduct => async dispatch => {
-  console.log(newProduct);
-  debugger;
   productsRef.push().set(newProduct);
 };
 
