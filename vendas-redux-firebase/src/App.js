@@ -12,11 +12,11 @@ class App extends Component {
         <Switch>
           {/* <Route exact={true} path="/" component={Login} />
           <Route path="/login" component={Login} /> */}
-          <Route exact strict patch="/home" component={Home} />
+          <Route exact strict path="/home" component={Home} />
           <Route
             exact
             strict
-            patch="./register-product"
+            path="/register-product"
             component={FormProduct}
           />
         </Switch>

@@ -3,6 +3,10 @@ import { SELECT_PRODUCTS } from "./types";
 
 export const addProduct = newProduct => async dispatch => {
   productsRef.push().set(newProduct);
+  const newProductWithId = newProduct;
+  console.log(productsRef.child(newProduct));
+  // newProductWithId.id = Object.keys(productsRef.child(newProduct))[0];
+  productsRef.child(newProduct).set(newProductWithId);
 };
 
 export const deleteProduct = productId => async dispatch => {

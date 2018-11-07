@@ -32,6 +32,7 @@ class Home extends Component {
   }
 
   renderProducts() {
+    console.log(this.props);
     const { data } = this.props;
     return _.map(data, (dado, i) => {
       return (

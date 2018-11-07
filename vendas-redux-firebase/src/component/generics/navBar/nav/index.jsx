@@ -6,7 +6,7 @@ class Navegacao extends Component {
     return (
       <Collapse isOpen={!this.props.collapsed} navbar>
         <Nav className="nav" navbar>
-          <ItemNavBar text="Cadastro de Produtos" href="/product" />
+          <ItemNavBar text="Cadastro de Produtos" href="/register-product" />
           <ItemNavBar
             text="GitHub"
             href="https://github.com/reactstrap/reactstrap"

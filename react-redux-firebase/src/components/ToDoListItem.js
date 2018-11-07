@@ -15,11 +15,11 @@ class ToDoListItem extends Component {
     completeToDo(completeToDoId);
   };
 
-  handleFormSubmit = (completeToDoId, event) => {
+  handleFormSubmit = (todoId, event) => {
     const { addFormValue } = this.state;
     const { editToDo } = this.props;
     event.preventDefault();
-    editToDo(completeToDoId, { title: addFormValue });
+    editToDo(todoId, { title: addFormValue });
     this.setState({ addFormValue: "" });
   };
 
